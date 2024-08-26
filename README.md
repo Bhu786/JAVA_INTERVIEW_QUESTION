@@ -462,6 +462,86 @@ public class fibonacci_program {
 
 ```java
 
+package first_demo;
+
+import java.util.Scanner;
+import java.lang.Math;
+
+public class Armstrong_program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		
+		
+//		123 ==>
+		
+		
+		Scanner input= new Scanner(System.in);
+		
+		System.out.println("enter the number:");
+		
+		int number=input.nextInt();
+		
+		int temp1=number;  //count ki leye
+		int temp2=number;   //armstrong ki leye
+		
+		
+		
+//		 count the digit
+		int count=0;
+		
+		
+		while(temp1!=0) 
+		{
+			
+			
+			count++;
+//			number chota ho jayega
+			
+			temp1=temp1/10;
+			
+		}
+		
+		System.out.println(count);
+//		
+		
+		
+		int result=0;
+		while(temp2!=0) {
+			
+		int rem=temp2%10;	
+		result=result+(int)Math.pow(rem,count);
+			
+		temp2=temp2/10;	
+			
+			
+		}
+		
+		
+		
+		if(result==number) {
+			System.out.println("yes");
+		}else {
+			System.out.println("No");
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}
+
+
 ```
 
 
@@ -470,6 +550,27 @@ public class fibonacci_program {
 ## Quest.7 Write a program to print table. take input from the user.
 
 ```java
+
+import java.util.Scanner;
+
+public class Multiplication_program{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+    
+        System.out.print("Enter a number to print its multiplication table: ");
+        int number = scanner.nextInt();
+        
+        // Print multiplication table
+        System.out.println("Multiplication Table of " + number);
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(number + " * " + i + " = " + (number * i));
+        }
+        
+        scanner.close();
+    }
+}
+
 
 ```
 
