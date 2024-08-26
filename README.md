@@ -171,6 +171,420 @@ public class cal_program {
 
 
 
+## Quest.1 Write a program to find the largest of the three given number. take input from the user.
+
+```java
+	package first_demo;
+import java.util.Scanner;
+
+public class Largest_0f_3_No {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub		
+		
+//	syso	
+//	System.out.println();		
+		Scanner first=new  Scanner(System.in);
+		Scanner second=new  Scanner(System.in);
+		Scanner third=new  Scanner(System.in);
+		
+		System.out.println("enter first no :");
+		int first_no=first.nextInt();
+		System.out.println("enter second no :");
+		int second_no=second.nextInt();
+		System.out.println("enter third no :");
+		int third_no=third.nextInt();
+		
+		
+		
+		if(first_no>second_no&&first_no>third_no) {
+			System.out.println("first is greater");
+		}else if(first_no<second_no&&second_no>third_no) {
+			System.out.println("second is greater");
+		}else {
+			System.out.println("third is greater");
+		}
+		
+		
+
+	}
+
+}
+
+
+
+```
+
+
+
+## Quest.2 Write a program to display the grade of the student given marks. take input from the user.
+
+```java
+
+
+
+package first_demo;
+
+import java.util.Scanner;
+
+public class Grade_promgram {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+Scanner input=new Scanner(System.in);
+  System.out.println("inter the number");
+
+  int number=input.nextInt();
+
+  if(number>90){
+	System.out.println("A+");
+  }else if(number>80&&number<90){
+	System.out.println("A");
+  }else if(number>70&&number<80){
+	System.out.println("B");
+  }else if(number>60&&number<70){
+	System.out.println("C");
+  }else if(number>50&&number<60){
+	System.out.println("D");
+  }else if(number<40){
+	System.out.println("failed");
+  }
+
+
+
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+```
+
+
+
+
+
+## Quest.3 Write a program to compute the number of days in a month by using switch statement.
+
+```java
+
+
+package first_demo;
+import java.util.Scanner;
+
+public class Month_program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+
+		Scanner input= new Scanner(System.in);
+		System.out.println("enter the month name:");
+		String month=input.nextLine();	
+		switch(month) {
+		
+		
+		case "january":  System.out.println("31");
+		break;
+		case "february": System.out.println("28");
+		break;
+		case "march":System.out.println("31");
+		break;
+		case "april":System.out.println("30");
+		break;
+		case "may":System.out.println("31");
+		break;
+		case "june":System.out.println("30");
+		break;
+		case "july":System.out.println("31");
+		break;
+		
+		case "august":System.out.println("30");
+		break;
+		
+		case "september":System.out.println("31");
+		break;
+		
+		case "octuber":System.out.println("30");
+		break;
+		
+		case "november":System.out.println("31");
+		break;
+		
+		case "december":System.out.println("30");
+		break;
+		
+		
+		default :
+			System.out.println("Invalid hai ");
+		
+			break;
+		
+		}
+		
+		
+		
+
+	}
+
+}
+
+
+
+```
+
+
+## Quest.4 Write a program to check the number is palindrome or not.
+
+
+```java
+
+package first_demo;
+
+import java.util.Scanner;
+
+public class Palindrom_promgram {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+//		121
+		
+		int num;
+		int result=0;
+		int temp=0;
+		int digit=0;
+		int a=0;
+		 Scanner scanner = new Scanner(System.in);
+	        
+	        System.out.println("Enter the first number:");
+	        Scanner obj = new Scanner(System.in);
+	        num = obj.nextInt();
+	        temp=num;
+		
+		do {
+			
+			digit=temp%10;
+			temp=temp/10;
+			a=a*10+digit;
+			
+			
+			
+		}while(temp>0);
+		
+		
+		if(a==num) {
+			System.out.println("yes is palindrom");
+		}
+		else {
+			System.out.println("not");
+		}
+		
+		
+
+	}
+
+}
+
+
+```
+
+
+
+## Quest.5 Write a program to print fibonacci series.
+
+
+
+```java
+
+```
+
+
+
+
+## Quest.6 Write a program to check the number is armstrong number of not.
+
+```java
+
+```
+
+
+
+
+## Quest.7 Write a program to print table. take input from the user.
+
+```java
+
+```
+
+## Quest.8 Write a program to print right triangle by using star pattern.
+
+
+```java
+package first_demo;
+
+public class Pattern_2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+//		
+//		*
+//	   **
+//	  ***
+//	 **** 
+//	*****
+		int n=5;
+		int i;
+		
+//		row hogya
+		
+		for(i=1;i<=n;i++) {
+			
+//			now come to pattern
+//			pattern me chej hai space and *
+			
+			
+			
+//			for space ki leye
+			for(int j=i;j<n;j++) {
+				System.out.print(" ");
+			}
+			
+			
+//			* 
+			for(int  k=1; k<=i;k++) {
+				System.out.print("*");
+			}
+			
+			System.out.println();
+			
+		}
+		
+				
+		
+	}
+
+}
+
+
+```
+
+## Quest.9 Write a program to print left angle triangle by using star pattern.
+
+
+```java
+package first_demo;
+
+public class Pattern_1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		
+		int n=5;
+//		
+//		*
+//		**
+//		***
+//		****
+//		*****
+		
+		
+		for(int i=1;i<=n;i++) {
+			
+			for(int j=1;j<=i;j++) {
+				System.out.print("*");
+				
+			}
+			
+			System.out.println();
+			
+			
+			
+		}
+				
+
+	}
+
+}
+
+
+```
+
+
+## Quest.10 Write a program to print pyramid by star pattern.
+
+```java
+
+
+package first_demo;
+
+public class Pattern_2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+//		    * 
+//		   * * 
+//		  * * * 
+//		 * * * * 
+//		* * * * * 		
+
+		int n=5;
+		int i;
+		
+//		row hogya
+		
+		for(i=1;i<=n;i++) {
+			
+//			now come to pattern
+//			pattern me chej hai space and *
+			
+			
+			
+//			for space ki leye
+			for(int j=i;j<n;j++) {
+				System.out.print(" ");
+			}
+			
+			
+//			* 
+			for(int  k=1; k<=i;k++) {
+				System.out.print("* ");
+			}
+			
+			System.out.println();
+			
+		}
+		
+				
+		
+		
+	}
+
+}
+
+
+```
+
+
+
+
 
 
 
