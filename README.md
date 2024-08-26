@@ -409,6 +409,50 @@ public class Palindrom_promgram {
 
 ```java
 
+package first_demo;
+
+import java.util.Scanner;
+
+public class fibonacci_program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		
+		Scanner input= new Scanner(System.in);
+		System.out.println("enter the number :");
+		int number=input.nextInt();	
+
+		// fibonacci == last ki do numbar ka sum == current number
+
+		int a=0;
+		int b=1;
+
+		int c=0;
+
+		for(int i=0;i<number;i++){
+
+          c=a+b;
+		  System.out.println(c);
+		  a=b;
+		  b=c;
+
+
+
+
+
+		}
+			
+
+	}
+
+}
+
+
+
+
+
 ```
 
 
