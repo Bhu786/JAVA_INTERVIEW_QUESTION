@@ -1,6 +1,6 @@
 # JAVA_INTERVIEW_QUESTION
 
-`<font color="red">This text will be red</font>`
+
 
 ## Ques. 1. When was java develope and who is the inventor of java? Why we use java for programming?
 **
